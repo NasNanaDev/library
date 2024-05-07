@@ -1,0 +1,144 @@
+/* general styling settings */
+
+* {
+    box-sizing: border-box;
+}
+.page-wrapper {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section {
+    padding: 0 20px;
+}
+a {
+   color: white;
+   text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    font-family: Forum;
+    font-size: 40px;
+    font-weight: normal;  
+    letter-spacing: 2px; 
+    display: inline-block; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h2::after{
+    content: '';
+    height: 1px;
+    width: 50px;
+    background-color: #0c0c0e;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+/*! ending of general settings*/
+
+/* header settings */
+
+.header {
+    background-color: #0c0c0e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.main-heading {
+    font-size: 30px;
+    font-family: 'Forum', regular;
+    font-weight: 100;
+}
+.main-heading-right {
+    display: flex;
+    align-items: center;
+}
+.header-list {
+    display: flex;
+    justify-content: space-between;
+}
+.header-list-item {
+    margin: 0 30px 0 0;
+    color: white;
+}
+.header-list-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+.header-list-item:visited {
+   color: #BB945F;
+}
+
+/*! ending of header settings */
+
+/* welcome block settings */
+
+.welcome {
+    background-image: url(assets/Welcome.jpg);
+    background-repeat: no-repeat;  
+}
+.welcome div {
+    padding: 220px 0 160px 0;
+    text-align: center;
+}
+.welcome p {
+    font-family: 'Forum';
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    background-color: #0C0C0E;
+    max-width: 520px;
+    padding: 35px 0;
+} 
+
+/*! ending of welcome block settings */
+
+/* about block settings */
+
+.about {
+    margin: 20px auto 40px auto;
+}
+.about-description {
+    line-height: 40px;
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+.photo-slider {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-fourth-item,
+.slider-fifth-item {
+    display: none;
+}
+.buttons-slider {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 0 0;
+    max-width: 68px;
+    
+}
+.button-slider {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: none;
+}
+.button-slider-active {
+    background: #BB945F;
+}
+.button-slider-unactive {
+    background: #0C0C0E;
+}
+    
+    
